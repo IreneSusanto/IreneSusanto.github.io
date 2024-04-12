@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Preventer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bad Code Smell</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="dispensable.html">Dispensable</a></li>
+                <li><a href="changepreventer.html">Change Preventer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="change-preventer">
+            <h2>Change Preventer</h2>
+            <div class="topic">
+                <h3>Divergent Change</h3>
+                <img src="divergent-change.png" alt="">
+                <p>Divergent change adalah suatu indikasi pada kode yang terjadi ketika sebuah kelas sering dimodifikasi karena berbagai alasan yang berbeda, yang memerlukan perubahan pada banyak metode yang tidak terkait di dalam kelas tersebut. Hal ini dapat menyebabkan kesalahan saat perubahan dilakukan yang tidak diharapkan oleh kelas, dan membatasi seberapa cepat perubahan dapat dilakukan pada kode.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="divergentchange_before.png" alt="dcb">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="divergentchange_after.png" alt="dca">
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Shotgun Surgery</h3>
+                <img src="shotgun-surgery.png" alt="">
+                <p>Mirip dengan Divergent Change, namun dengan cakupan yang lebih luas, gejala aroma Shotgun Surgery pada kode terdeteksi oleh kebutuhan yang tidak perlu untuk mengubah beberapa kelas yang berbeda untuk memperkenalkan satu modifikasi tunggal.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="shotgunsurgery_before.png" alt="ssb">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="shotgunsurgery_after.png" alt="ssa">
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Parallel Inheritance Hierarchies</h3>
+                <img src="parallel-inheritance-hierarchies.png" alt="">
+                <p>Parallel Inheritance Hierarchies adalah aroma kode yang terjadi ketika dua hierarki kelas atau objek yang sejajar perlu berkembang bersama-sama. Hal ini dapat terjadi ketika tree pewarisan bergantung pada tree pewarisan lain melalui komposisi, dan salah satu subkelas dari pewarisan yang bergantung harus bergantung pada satu subkelas dari pewarisan lain.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="pih_before.png" alt="pihb">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="pih_after.jpg" alt="piha">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="referensi">
+            <h3>Referensi</h3>
+            <p>Refactoring Guru: <a href="https://refactoring.guru/refactoring/smells/change-preventers">https://refactoring.guru/refactoring/smells/change-preventers</a></p>
+        </section>
+    </div>
+    <div class="footer">
+        
+    </div>
+    <footer>
+        <p>&copy; Kelompok Code Reengineering:</p>
+        <p>2602062210 - Gianina Cheryl Gosal</p>
+        <p>2602063106 - Irene Susanto</p>
+        <p>Dosen: Rezki Yunanda, S.Kom., M.Kom</p>
+    </footer>
+</body>
+</html>

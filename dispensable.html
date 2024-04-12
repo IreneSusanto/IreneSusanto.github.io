@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispensable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bad Code Smell</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="dispensable.html">Dispensable</a></li>
+                <li><a href="changepreventer.html">Change Preventer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="dispensable">
+            <h2>Dispensable</h2>
+            <div class="topic">
+                <h3>Comments</h3>
+                <img src="comments.png" alt="">
+                <p>Comments sebaiknya digunakan secara hemat dan hanya jika memang diperlukan. Kode yang jelas dan mudah dimengerti seharusnya tidak memerlukan comment tambahan. Comments yang berlebihan dapat menjadi tanda bahwa kode tersebut tidak cukup deskriptif.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="comments_before.png" alt="cb">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="comments_after.png" alt="ca">
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Duplicate Code</h3>
+                <img src="duplicate-code.png" alt="">
+                <p>Duplikasi kode adalah smell code yang umum terjadi ketika kode yang sama diulang di beberapa bagian dari sebuah aplikasi. Ini dapat membuat kode sulit untuk dipelihara, dan meningkatkan risiko bug dan kerentanan keamanan.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="duplicatecode_before.png" alt="dcb">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="duplicatecode_after.png" alt="dca">
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Lazy Class</h3>
+                <img src="lazy_class.png" alt="">
+                <p>Lazy class adalah kelas yang tidak memberikan kontribusi yang cukup berarti dalam aplikasi. Mereka mungkin hanya memiliki beberapa metode atau fungsi yang jarang dipanggil, atau mungkin hanya berfungsi sebagai wadah untuk beberapa variabel.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="lazyclass_before.png" alt="">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <p>Logika 'calculateArea' sebaiknya dimasukkan ke dalam kelas-kelas yang relevan yang membutuhkannya. Untuk 'formatName', pertimbangkan untuk membuat kelas pembantu terpisah jika digunakan secara luas dan tidak terkait dengan domain spesifik.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Data Class</h3>
+                <img src="data-class.png" alt="">
+                <p>Data class adalah kelas yang sebagian besar terdiri dari properti dan hanya menyediakan metode-metode untuk mengakses dan memanipulasi data tersebut. Mereka tidak memiliki logika bisnis yang kompleks.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="dataclass_before.png" alt="">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <img src="dataclass_after.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Dead Code</h3>
+                <img src="dead-code.png" alt="">
+                <p>Dead code adalah kode yang tidak pernah dieksekusi dan tidak lagi diperlukan dalam aplikasi. Ini bisa terjadi karena perubahan dalam persyaratan atau karena implementasi yang salah.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="deadcode_before.png" alt="">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <p>Jika kode yang dijadikan komentar tidak lagi diperlukan, hapuslah. Jika kode yang dijadikan komentar mungkin berguna di masa depan, pertimbangkan untuk menggunakan kontrol versi atau fitur terpisah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic">
+                <h3>Speculative Generality</h3>
+                <img src="speculative-generality.png" alt="">
+                <p>Speculative generality terjadi ketika Anda memperkenalkan abstraksi atau fungsionalitas yang tidak diperlukan saat ini, tetapi mungkin akan diperlukan di masa depan. Hal ini dapat menyebabkan kompleksitas yang tidak perlu dalam kode.</p>
+                <div class="contoh">
+                    <div class="Before">
+                        <p>Before</p>
+                        <img src="sg_before.png" alt="">
+                    </div>
+                    <div class="After">
+                        <p>After</p>
+                        <p>Pertimbangkan untuk menggunakan antarmuka atau kelas abstrak untuk mendefinisikan perilaku umum dan memungkinkan implementasi konkret dengan logika gambar yang spesifik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="referensi">
+            <h3>Referensi</h3>
+            <p>Refactoring Guru: <a href="https://refactoring.guru/refactoring/smells/dispensables">https://refactoring.guru/refactoring/smells/dispensables</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy;2024 Kelompok Code Reengineering:</p>
+        <p>2602062210 - Gianina Cheryl Gosal</p>
+        <p>2602063106 - Irene Susanto</p>
+        <p>Dosen: Rezki Yunanda, S.Kom., M.Kom</p>
+    </footer>
+</body>
+</html>
